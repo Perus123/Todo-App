@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+ .center
+  { 
+    margin: auto;
+    width: 100%;
+   
+    border: 3px solid green;
+    padding: 10px;
+    
+  }
+  input, div {
+    border: 0;
+
+ 
+    background: transparent;
+    
+}
+.bckg {
+    background-color: #5dbfc9;
+    font-family: serif;
+    min-height: 100vh;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5dbfc9;
+  max-width: 700px;
+  margin: auto;
+}
+.custom-shape-divider-top-1696606556 {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1696606556 svg {
+ 
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 120px;
+}
+
+.custom-shape-divider-top-1696606556 .shape-fill {
+  fill: #3f6212;
+}
+    
