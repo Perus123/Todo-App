@@ -10,7 +10,8 @@ function addtask(){
   else
   {
     items.value.push(text.value)
-    console.log(items.value)
+ 
+    text.value=""
   }
   
 }
@@ -21,13 +22,11 @@ function arrayRemove(value) {
      return task !== value;
  })
 }
-function change(x,y)
-{
-  y=x;
-}
-function edit(x,y) {
-  arrayRemove(x);
-  change(x,y);
+
+function edit(value) {
+  
+  arrayRemove(value)
+  text.value=value
 
 }
 
@@ -39,7 +38,7 @@ function edit(x,y) {
 
 <template>
   <div class="bg-black min-h-screen text-white">
-    <div class="flex justify-between w-full font-serif text-4xl py-4 pl-4 font-semibold bg-lime-800 text-amber-600" >      
+    <div class="flex justify-between w-full font-serif text-4xl py-4 pl-4 font-semibold bg-lime-800 " >      
         <div>
           Hey, time to get some things done.
         </div>
@@ -57,7 +56,7 @@ function edit(x,y) {
     What are your tasks for today?   
    <form id="myform" @submit.prevent="addtask">
     <input v-model="text" placeholder="Ex: Clear your room " size="40">
-    <button class="ml-3 pl-6 pr-6 bg-lime-800 rounded m-3 text-amber-600" >
+    <button class="ml-3 pl-6 pr-6 bg-lime-800 rounded m-3 " >
     Add
    </button> 
   </form>
@@ -68,12 +67,12 @@ function edit(x,y) {
     <ul  class="min-w-full border border-lime-800 rounded-lg " >
     <li v-for="item in items" class="text-2xl m-3" >
       <button @click ="arrayRemove(item)" class="rounded-full " >
-        (✓)  da
+        (✓)
       </button>
      
         {{item}}
         
-      <button @click ="edit(item ,text)" class="float-right">
+      <button @click ="edit(item)" class="float-right">
          Edit
       </button> 
         
