@@ -37,6 +37,9 @@ function edit(value) {
 </script>
 
 <template>
+  <title>
+    Day Structure
+  </title>
   <div class="bg-black min-h-screen text-white">
     <div class="flex justify-between w-full font-serif text-4xl py-4 pl-4 font-semibold bg-lime-800 " >      
         <div>
