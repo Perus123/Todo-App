@@ -38,12 +38,12 @@ function edit(value) {
 
 <template>
   <title>
-    Day Structure
+    To-Do List
   </title>
   <div class="bg-black min-h-screen text-white">
     <div class="flex justify-between w-full font-serif text-4xl py-4 pl-4 font-semibold bg-lime-800 " >      
         <div>
-          Hey, time to get some things done.
+          Hey, e timpul să ne apucăm de treabă!
         </div>
         <div class="pr-5">
           😎
@@ -56,11 +56,11 @@ function edit(value) {
 </div>
 <div class="flex justify-center content-center py-5">
   <p class="text-3xl mr-10 py-3">
-    What are your tasks for today?   
+    Ce ai de făcut astăzi?  
    <form id="myform" @submit.prevent="addtask">
-    <input v-model="text" placeholder="Ex: Clear your room " size="40">
+    <input v-model="text" placeholder="Ex: Spală mașina " size="40">
     <button class="ml-3 pl-6 pr-6 bg-lime-800 rounded m-3 " >
-    Add
+    Adaugă
    </button> 
   </form>
   </p>
